@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Calculator</title>
+    <!-- Morgan Kennedy -->
+</head>
+<body>
+    <form method="get" id="shoppingForm">
+
+        <fieldset>
+            <table border="1">
+                <tr>
+        <!--Row 1-->
+                    <td><label for="quantity">Quantity</label></td>
+                    <td><input type="number" name="quantity" id="quantity" value="1" min="1" required></td>
+                </tr>
+        <!--Row 2-->
+                <tr>
+                    <td><label for="price">Price Per Unit</label></td>
+                    <td><input type="text" id="price" name="price" value="1.00" required></td>
+                </tr>
+        <!--Row 3-->
+                <tr>
+                    <td><label for="tax">Tax Rate (%)</label></td>
+                    <td><input type="text" id="tax" name="tax" value="1.00" required></td>
+                </tr>
+        <!--Row 4-->
+                <tr>
+                    <td><label for="discount">Discount</label></td>
+                    <td><input type="text" id="discount" name="discount" value="0.00" required></td>
+                </tr>
+        <!--Row 5-->
+                <tr>
+                    <td><label for="total">Total</label></td>
+                    <td><input type="text" id="total" name="total" value="0.00" readonly></td>
+                </tr>
+        <!--Row 6-->
+                <tr>
+                    <td colspan="2" align="right">
+                        <input type="submit" id="submit" value="Calculate">
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>
